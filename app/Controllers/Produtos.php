@@ -18,7 +18,7 @@ class Produtos extends ResourceController{
     public function list()
     {
         $data = $this->produtosModel->findAll();
-        // retorna resposta->setaJeson
+        // retorna resposta->setaJeson vai retorna a resposta no formato Json
         return $this->response->setJSON($data);
         
     }

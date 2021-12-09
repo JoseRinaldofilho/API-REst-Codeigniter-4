@@ -33,6 +33,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+// rota PRODUTOS REST
+$routes->get('produtos', 'Produtos::list');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
