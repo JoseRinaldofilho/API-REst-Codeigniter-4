@@ -35,6 +35,8 @@ $routes->get('/', 'Home::index');
 
 // rota PRODUTOS REST
 $routes->get('produtos', 'Produtos::list');
+// criando roda do create
+$routes->post('produtos/create', 'Produtos::create');
 
 /*
  * --------------------------------------------------------------------
